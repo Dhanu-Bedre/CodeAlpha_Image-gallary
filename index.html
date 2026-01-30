@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Image Gallery</h1>
+
+  
+  <div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('animals')">Animals</button>
+    <button onclick="filterImages('architecture')">Architecture</button>
+  </div>
+
+  <div class="gallery">
+    
+    <img src="images/nature1.jpg" alt="Nature" class="nature" onclick="openLightbox(0)">
+    <img src="images/nature2.jpg" alt="Nature" class="nature" onclick="openLightbox(1)">
+    <img src="images/nature3.jpg" alt="Nature" class="nature" onclick="openLightbox(2)">
+    <img src="images/nature4.jpg" alt="Nature" class="nature" onclick="openLightbox(3)">
+    <img src="images/nature5.jpg" alt="Nature" class="nature" onclick="openLightbox(4)">
+
+    
+    <img src="images/animal1.jpg" alt="Animal" class="animals" onclick="openLightbox(5)">
+    <img src="images/animal2.jpg" alt="Animal" class="animals" onclick="openLightbox(6)">
+    <img src="images/animal3.jpg" alt="Animal" class="animals" onclick="openLightbox(7)">
+    <img src="images/animal4.jpg" alt="Animal" class="animals" onclick="openLightbox(8)">
+    <img src="images/animal5.jpg" alt="Animal" class="animals" onclick="openLightbox(9)">
+
+    <img src="images/architecture1.jpg" alt="Architecture" class="architecture" onclick="openLightbox(10)">
+    <img src="images/architecture2.jpg" alt="Architecture" class="architecture" onclick="openLightbox(11)">
+    <img src="images/architecture3.jpg" alt="Architecture" class="architecture" onclick="openLightbox(12)">
+    <img src="images/architecture4.jpg" alt="Architecture" class="architecture" onclick="openLightbox(13)">
+    <img src="images/architecture5.jpg" alt="Architecture" class="architecture" onclick="openLightbox(14)">
+  </div>
+
+
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" alt="Large view">
+    <div class="navigation">
+      <button onclick="prevImage()">⟨ Prev</button>
+      <button onclick="nextImage()">Next ⟩</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
